@@ -1,0 +1,536 @@
+.contrainer{
+	width: 100%;
+	height: auto;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	flex-flow: wrap;
+}
+body{
+	background:black;
+	margin: 0 ;
+}
+ h4:hover{
+	color: #ff922b;
+}
+.box {
+	transition:1;
+	width: 300px;
+	height: 500px;
+	margin: 20px;
+	box-sizing: border-box;
+	font-size: 15px;
+	box-shadow: 0 0 0 1px;
+	color: white;
+	border-radius: 25px;
+	background-image: url(rayhan.jpg);
+	background-position: center;
+	background-size: cover;
+	animation: ubahwarnaborder 2s infinite;
+	cursor: pointer;
+}
+
+.box1{
+	transition:1;
+	width: 300px;
+	height: 500px;
+	margin: 20px;
+	box-sizing: border-box;
+	font-size: 15px;
+	box-shadow: 0 0 0 1px;
+	border-radius: 25px;
+	background-image: url(fitri.jpg);
+	background-position: center;
+	background-size: cover;
+	color: white;
+	animation: ubahwarnaborder 2s infinite;
+	cursor: pointer;
+}
+
+.box2{
+	transition:1;
+	width: 300px;
+	height: 500px;
+	margin: 20px;
+	box-sizing: border-box;
+	font-size: 15px;
+	box-shadow: 0 0 0 1px;
+	color: white;
+	border-radius: 25px;
+	background-image: url(syahdan.jpg);
+	background-position: center;
+	background-size: cover;
+	animation: ubahwarnaborder 2s infinite;
+	cursor: pointer;
+}
+
+.box3{
+	transition:1;
+	width: 300px;
+	height: 500px;
+	margin: 20px;
+	color: white;
+	box-sizing: border-box;
+	font-size: 15px;
+	box-shadow: 0 0 0 1px;
+	border-radius: 25px;
+	background-image: url(pilda.jpg);
+	background-position: center;
+	background-size: cover;
+	animation: ubahwarnaborder 2s infinite;
+	cursor: pointer;
+}
+
+.box:hover,.box1:hover,.box2:hover,.box3:hover{
+	transform: scale(1.04);
+	box-shadow: 2px 2px 2px white;
+	z-index: 2;
+}
+
+h4{
+	text-align: center;
+	font-size:30px;
+	color: white;
+	font-family: 'Poppins', sans-serif;
+	margin-bottom: 10px;
+	cursor: pointer;
+}
+.box1 h2{
+	text-align: center;
+  padding-top: 75%;
+  font-family: 'poppins', sans-serif;
+}
+.box2 h3{
+	text-align: center;
+  padding-top: 80%;
+	font-family: 'poppins',sans-serif;
+}
+.box3 h3{
+	text-align: center;
+	padding-top: 78%;
+	padding-bottom: 15px;
+	font-family: 'poppins',sans-serif;
+}
+.box h3{
+	text-align: center;
+	padding-top: 75%;
+	font-family: 'poppins',sans-serif;
+}
+i{
+	font-size:30px;
+	padding-left:80px;
+}
+.box1 p{
+  padding-left:60px ;
+  color: white;
+  padding-top: 41%;
+  font-size: 17px;
+  font-family: 'poppins',sans-serif;
+}
+.box3 p{
+	padding-top:123px;
+	font-size: 17px;
+	padding-left: 60px;
+	font-family: 'poppins',sans-serif;
+}
+.box ul{
+	padding-left:5px;
+  text-align: center;
+	color: white;
+	padding-top: 39%;
+	font-family: 'poppins',sans-serif;
+	font-size:20px;
+}
+.box2 ul{
+	text-align: center;
+	font-family: 'poppins',sans-serif;
+	padding-top: 37%;
+	font-size: 20px;
+	padding-left: 5px;
+}
+.box hr{
+	width: 40px;
+	height: 1px;
+	background-color: white;
+	padding-right: 30px;
+	margin-top: -15px;
+}
+.box3 hr{
+	width: 40px;
+	height: 1px;
+	margin-top: -33px;
+	background-color: white;
+}
+.box1 hr{
+	width: 25px;
+	margin-top: -20px;
+}
+.box2 hr{
+	margin-top: -20px;
+}
+hr{
+	height: 1px;
+	background-color: white;
+	width: 50px;
+	padding-right: 30px;
+}
+/*@keyframes ubahwarnaborder{
+	30%{
+       box-shadow: 0 0 0 1px white;,0 0 35px 0 white;
+		}
+	60%{
+		  box-shadow: 0 0 0 1px white;,0 0 35px 0 white;
+		}
+}*/
+
+
+.anak1 p{
+	text-align: center;
+	font-family: 'poppins',sans-serif;
+	color:white;
+	margin-top: -90px;
+}
+.anak1 h4{
+	padding: 90px;
+}
+
+.anak{
+ 	display: flex;
+ 	justify-content: center;
+ 	gap: 10px;
+ 	align-items: center;
+ 	padding: 20px;
+	margin-bottom: -5px;
+}
+.anak span{
+	padding:10px 8px;
+}
+.active {
+	border-bottom: 5px solid orange;
+
+}
+
+
+.flex-contrainer,.flex-direction{
+	width: 100%;
+	height: auto;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 25px;
+}
+.flex-box1{
+	width: 400px;
+	height: 70px;
+	background-image: url(rayhan1.png);
+	background-size: cover;
+	background-position: center;
+	font-size: 25px;
+	border-radius: 10px;
+	background-size: cover;
+	margin: 10px;
+	animation: ubahwarnaborder 3s infinite;
+}
+.flex-box2{
+	width: 500px;
+	height: 295px;
+	background-image: url(rayhan6.png);
+	background-position: center;
+	background-size: cover;
+	font-size: 25px;
+	border-radius: 10px;
+	margin: 10px;
+	animation: ubahwarnaborder 3s infinite;
+}
+.flex-box3{
+	width: 350px;
+	height: 400px;
+	background-image: url(rayhan2.png);
+	font-size: 25px;
+	background-position: center;
+	background-size: cover;
+	border-radius: 10px;
+	margin: 10px;
+	animation: ubahwarnaborder 3s infinite;
+}
+.flex-box4{
+	width: 460px;
+	height: 385px;
+	background-image: url(rayhan4.png);
+	background-position: center;
+	font-size: 25px;
+	border-radius: 10px;
+	background-size: cover;
+	margin: 10px;
+	animation: ubahwarnaborder 3s infinite;
+}
+.flex-box5{
+	width: 300px;
+	height: 370px;
+	background-image: url(rayhan5.png);
+	font-size: 25px;
+	border-radius: 10px;
+	background-size: cover;
+	background-position: center;
+	margin: 10px;
+	animation: ubahwarnaborder 3s infinite;
+}
+.flex-box6{
+	width: 400px;
+	height: 500px;
+	background-image: url(rayhan3.png);
+	font-size: 25px;
+	border-radius: 10px;
+	background-size: cover;
+	background-position: center;
+	margin: 10px;
+	animation: ubahwarnaborder 3s infinite;
+}
+.flex-box7{
+	width: 475px;
+	height: 590px;	
+	background-image: url(syahdan6.png);
+	background-position: center;
+	background-size: cover;
+	font-size: 25px;
+	border-radius: 10px;
+	margin: 10px;
+	animation: ubahwarnaborder 3s infinite;
+}
+.flex-box8{
+  width: 395px;
+	height: 550px;
+	background-image: url(syahdan2.png);
+	background-position: center;
+	background-size: cover;
+	font-size: 25px;
+	border-radius: 10px;
+	margin: 10px;
+	animation: ubahwarnaborder 3s infinite;
+}
+.flex-box9{
+  width: 405px;
+	height: 550px;
+	background-image: url(syahdan3.png);
+	background-position: center;
+	background-size: cover;
+	font-size: 25px;
+	border-radius: 10px;
+	margin: 10px;
+	animation: ubahwarnaborder 3s infinite;
+}
+.flex-box10{
+  width: 480px;
+	height: 345px;
+	background-image: url(syahdan4.png);
+	background-position: center;
+	background-size: cover;
+	font-size: 25px;
+	border-radius: 10px;
+	margin: 10px;
+	animation: ubahwarnaborder 3s infinite;
+}
+
+.flex-box11{
+	width: 435px;
+	height: 345px;
+	background-image: url(syahdan5.png);
+	background-position: center;
+	background-size: cover;
+	font-size: 25px;
+	border-radius: 10px;
+	margin: 10px;
+	animation: ubahwarnaborder 3s infinite;
+}
+.flex-box12{
+  width: 360px;
+	height: 345px;
+	background-image: url(syahdan1.png);
+	background-position: center;
+	background-size: cover;
+	font-size: 25px;
+	border-radius: 10px;
+	margin: 10px;
+	animation: ubahwarnaborder 3s infinite;
+}
+.flex-box13{
+	width: 360px;
+	height: 400px;
+	background-image: url(pilda1.png);
+	background-position: center;
+	background-size: cover;
+	font-size: 25px;
+	border-radius: 10px;
+	margin: 10px;
+	animation: ubahwarnaborder 3s infinite;
+}
+.flex-box14{
+	width: 370px;
+	height: 400px;
+	background-image: url(pilda2.png);
+	background-position: center;
+	background-size: cover;
+	font-size: 25px;
+	border-radius: 10px;
+	margin: 10px;
+	animation: ubahwarnaborder 3s infinite;
+}
+.flex-box15{
+  width: 600px;
+	height: 405px;
+	background-image: url(pilda6.png);
+	background-position: center;
+	background-size: cover;
+	font-size: 25px;
+	border-radius: 10px;
+	margin: 10px;
+	animation: ubahwarnaborder 3s infinite;
+}
+.flex-box16{
+	width: 185px;
+	height: 320px;
+	background-image: url(pilda3.png);
+	background-position: center;
+	background-size: cover;
+	font-size: 25px;
+	border-radius: 10px;
+	margin: 10px;
+	animation: ubahwarnaborder 3s infinite;
+}
+.flex-box17{
+	width: 360px;
+	height: 345px;
+  background-image: url(pilda5.png);
+	background-position: center;
+	background-size: cover;
+	font-size: 25px;
+	border-radius: 10px;
+	margin: 10px;
+	animation: ubahwarnaborder 3s infinite;
+}
+.flex-box18{
+	width: 320px;
+	height: 345px;
+	background-image: url(pilda4.png);
+	background-position: center;
+	background-size: cover;
+	font-size: 25px;
+	border-radius: 10px;
+	margin: 10px;
+	animation: ubahwarnaborder 3s infinite;
+}
+.flex-box19{
+	width: 320px;
+	height: 345px;
+	background-image: url(fitri1.png);
+	background-position: center;
+	background-size: cover;
+	font-size: 25px;
+	border-radius: 10px;
+	margin: 10px;
+	animation: ubahwarnaborder 3s infinite;
+}
+.flex-box20{
+	width: 320px;
+	height: 345px;
+	background-image: url(fitri2.png);
+	background-position: center;
+	background-size: cover;
+	font-size: 25px;
+	border-radius: 10px;
+	margin: 10px;
+	animation: ubahwarnaborder 3s infinite;
+}
+.flex-box21{
+	width: 320px;
+	height: 345px;
+	background-image: url(fitri3.png);
+	background-position: center;
+	background-size: cover;
+	font-size: 25px;
+	border-radius: 10px;
+	margin: 10px;
+	animation: ubahwarnaborder 3s infinite;
+}
+.flex-box22{
+	width: 320px;
+	height: 345px;
+	background-image: url(fitri4.png);
+	background-position: center;
+	background-size: cover;
+	font-size: 25px;
+	border-radius: 10px;
+	margin: 10px;
+	animation: ubahwarnaborder 3s infinite;
+}
+.flex-box23{
+	width: 320px;
+	height: 345px;
+	background-image: url(fitri5.png);
+	background-position: center;
+	background-size: cover;
+	font-size: 25px;
+	border-radius: 10px;
+	margin: 10px;
+	animation: ubahwarnaborder 3s infinite;
+}
+.flex-box24{
+	width: 320px;
+	height: 345px;
+	background-image: url(fitri6.png);
+	background-position: center;
+	background-size: cover;
+	font-size: 25px;
+	border-radius: 10px;
+	margin: 10px;
+	animation: ubahwarnaborder 3s infinite;
+}
+
+@keyframes ubahwarnaborder{
+ 30%{
+  box-shadow: 0 0 0 1px white;,0 0 35px 0 white;
+	}
+	60%{
+	box-shadow: 0 0 0 1px white;,0 0 35px 0 white;
+  }
+}
+
+@media(max-width:269px){
+	.anak a{
+		padding: 5px;
+	}
+}
+
+.flex-direction div{
+	width: 350px;
+	height: 350px;
+	background-size: cover;
+	background-position: center;
+}
+.flex-contrainer div,.flex-direction div{
+	width: 350px;
+	height: 350px;
+	background-size: cover;
+	background-position: center;
+	transition: all 0.3s ease;
+}
+.flex-contrainer div:hover,.flex-direction div:hover{
+	background-size: 150%;
+}
+.projectSyahdan{
+	display: none;
+}
+.projectFilzdah{
+	display: none;
+}
+.projectFitri{
+	display: none;
+}
+
+.anak span {
+	font-size: 20px;
+	color: white;
+	font-family: "Poppins", sans-serif;
+	cursor: pointer;
+}

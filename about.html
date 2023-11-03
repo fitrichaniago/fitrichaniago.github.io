@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+	<title>coba</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<style type="text/css">
+
+
+		* {
+			margin: 0;
+			padding: 0;
+			color: white;
+			font-family: "Poppins";
+			box-sizing: border-box;
+		}
+		html {
+			scroll-behavior: smooth;
+		}
+		.about-me {
+			align-items: center;
+			margin: 0 auto;
+			width: 100%;
+			min-height: 100vh;
+			padding: 60px 20px;
+			background: #212529;
+		}
+
+		.teks h1 {
+			display: flex;
+			justify-content: center;
+			text-align: center;
+			align-items: center;
+			color: white;
+			font-size: 35px;
+			margin-bottom: 40px;
+		}
+
+		.content3 {
+			padding: 70px 20px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			gap : 30px;
+			position: relative;
+		}
+
+		.nomor {
+			position: absolute;
+			top: 0;
+			right: 0;
+			font-size: 30px;
+			color: orange;
+			display: flex;
+			gap:10px;
+			align-items: center;
+			font-family: sans-serif;
+		}
+
+		.nomor span {
+			width: 50px;
+			height: 5px;
+			background-color: #ff922b;
+			display: inline-block;
+		}
+
+		@media(max-width: 600px){
+			.content3{
+				flex-direction: column;				
+			}
+
+			.nomor {
+				font-size: 15px;
+			}
+
+			.tombolBalik {
+				font-size: 70px;
+			}
+		}
+
+		.gambar img {
+			border-radius: 20px;
+			border: 3px solid white;
+			box-shadow: 0 0 20px 0 white;
+		}
+		
+		.about-teks h2 {
+			font-size: 40px;
+			margin-bottom: 10px;
+		}
+
+		.pembatas{
+			width: 150px;
+			border:none;
+			height: 5px;
+			background-color: #ff922b;
+			margin-bottom: 20px;
+		}
+
+		.batas{
+			width: 80px;
+			border:none;
+			height: 5px;
+			background-color: #ff922b;
+			margin-bottom: 20px;
+		}
+
+		.garis{
+			width: 185px;
+			border:none;
+			height: 5px;
+			background-color: #ff922b;
+			margin-bottom: 20px;
+		}
+
+		.bawah{
+			width: 165px;
+			border:none;
+			height: 5px;
+			background-color: #ff922b;
+			margin-bottom: 20px;
+		}
+
+		.about-teks p {
+			font-size: 16px;
+		}
+
+		.about-teks .button {
+			border: 3px solid black;
+			border-radius: 20px; 
+			padding: 25px;
+			margin-top: 30px;
+			background-color: black;
+			box-shadow: 0 0 100px 0 black;
+
+		}
+		
+		.about-teks .button p {
+			margin-bottom: 8px;
+			font-size: 16px;
+		}
+		.tombolBalik {
+			position: absolute;
+			left: 0;
+			top: 0;
+			margin: 10px;
+			width: 35px;
+			height: 35px;
+			display: flex;
+
+			justify-content: center;
+			align-items: center;
+			font-size: 30px;
+			/*border-radius: 50%;
+			border:1px solid black;;
+			box-shadow: 0 0 15px 0 rgba(255,255,255,0.5);*/
+		}
+
+		.tombolBalik a {
+			text-decoration: none;
+		}
+	</style>
+</head>
+<body>
+<div class="tombolBalik">
+	<a href="./index.html">
+		<span>&larr;</span>
+	</a>
+</div>
+	<!-- rehan -->
+	<div class="about-me" id="rehan">
+		<div class="teks">
+			<h1>ABOUT US</h1>
+		</div>
+
+		<div class="content3">
+
+			<div class="nomor">
+				<h1>01</h1>
+				<span></span>
+			</div>
+
+			<div class="gambar">
+				<img src="rayhan.jpg" width="100%;">
+			</div>
+
+			<div class="about-teks">
+					
+				<h2>Rayhan</h2>
+				<hr class="bawah">
+
+				<p>
+					Rayhan adalah seorang siswa SMK Panca Budi asal Medan. Ia merupakan siswa jurusan multimedia
+					kelas 2 SMK. Rayhan merupakan seorang yang pantang menyerah. Ia memiliki ketertarikan tinggi di bidang desain. Rayhan pernah magang 3 bulan di sebuah perusahaan yang berada di Kota Medan.
+					<br><br>
+
+					<div class="button">
+						<p>Nama 		: Muhammad Rayhan Budiantara</p> 
+						<p>Umur         : 16 tahun</p>
+						<P>Alamat       : Medan, Indonesia</P>
+						<p>Email        : rayhanbudiantara@gmail.com</p>
+						<p>Pengalaman   : Memiliki kemampuan dalam bidang desain</p>
+					</div>
+				</p>
+
+			</div>
+
+		</div>
+	</div>
+
+	<!-- fitri -->
+	<div class="about-me" id="fitri">
+		<div class="teks"></div>
+
+		<div class="content3">
+
+			<div class="nomor">
+				<h1>02</h1>
+				<span></span>
+			</div>
+
+			<div class="gambar">
+				<img src="fitri.jpg" width="100%;">
+			</div>
+
+			<div class="about-teks">
+					
+				<h2>Fitri</h2>
+				<hr class="batas">
+
+				<p>
+					Fitri adalah seorang siswi SMK Panca Budi Medan yang menduduki kelas 2 SMK. Ia memilih jurusan Teknik Komputer Jaringan. Fitri memiliki pengalaman prakerin di salah satu perusahaan yang terdapat di Medan selama 3 bulan. Ia disana diajarkan mengenai pemrograman.
+					<br><br>
+
+					<div class="button">
+						<p>Nama 		: Fitri Oktaviani</p> 
+						<p>Umur         : 16 tahun</p>
+						<P>Alamat       : Medan, Indonesia</P>
+						<p>Email        : fitrioktaviani1013@gmail.com</p>
+						<p>Pengalaman   : Memiliki kemampuan dalam bidang jaringan</p>
+					</div>
+				</p>
+
+			</div>
+
+		</div>
+	</div>
+
+	<!-- syahdan -->
+	<div class="about-me" id="syahdan">
+		<div class="teks"></div>
+
+		<div class="content3">
+
+			<div class="nomor">
+				<h1>03 </h1>
+				<span></span>
+			</div>
+
+			<div class="gambar">
+				<img src="dan.jpg" width="100%;">
+			</div>
+
+			<div class="about-teks">
+					
+				<h2>Syahdan</h2>
+				<hr class="garis">
+
+				<p>
+					Syahdan adalah siswa SMK Panca Budi Medan yang memilih jurusan multimedia. Syahdan memilih
+					jurusan multimedia sebab ia tertarik mengenai desain grafis, photographer, dan editing. Syahdan
+					memiliki pengalaman prakerin di salah satu perusahaan yang terdapat di Medan selama 3 bulan sesuai dengan jurusan yang telah dipilihnya. Ia adalah seorang yang dapat diandalkan, suka bekerja sama dengan tim dan selalu tepat waktu.
+					<br><br>
+					<div class="button">
+						<p>Nama 		: Syahdan</p> 
+						<p>Umur         : 16 tahun</p>
+						<P>Alamat       : Medan, Indonesia</P>
+						<p>Email        : sasadan702@gmail.com</p>
+						<p>Pengalaman   : Memiliki kemampuan dalam bidang desain</p>
+					</div>
+				</p>
+ 
+			</div>
+
+		</div>
+	</div>
+
+	<!-- filza -->
+	<div class="about-me" id="filza">
+		<div class="teks"></div>
+
+		<div class="content3">
+
+			<div class="nomor">
+				<h1>04</h1>
+				<span></span>
+			</div>
+
+			<div class="gambar">
+				<img src="filza.jpg" width="100%;">
+			</div>
+
+			<div class="about-teks">
+					
+				<h2>Filzdah</h2>
+				<hr class="pembatas">
+
+				<p>
+					Memiliki kepribadian yang ceria, Filzdah ialah seorang yang selalu termotivasi untuk mencoba hal baru, dan kreatif. Ia memiliki kemampuan untuk berkomunikasi dengan baik dan memiliki ketertarikan besar dalam bidang jaringan dan pemrograman. Sebagai siswi SMK ia mempunyai pengalaman prakerin di salah satu perusahaan di Medan selama 3 bulan. Selama prakerin ia diajarkan mengenai pemrograman. 
+					<br><br>
+
+					<div class="button">
+						<p>Nama 		: Filzdah Nur Afifah</p> 
+						<p>Umur         : 16 tahun</p>
+						<P>Alamat       : Medan, Indonesia</P>
+						<p>Email        : pijja.affh@gmail.com</p>
+						<p>Pengalaman   : Memiliki kemampuan dalam bidang jaringan</p>
+					</div>
+				</p>
+
+			</div>
+
+		</div>
+	</div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

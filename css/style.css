@@ -1,0 +1,876 @@
+:root {
+  --color: #1b1c21;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  padding: 0;
+  font-family: "poppins";
+  box-sizing: border-box;
+}
+body {
+  color: white;
+  background-color: #212529;
+  margin: 0;
+}
+
+/*home page*/
+
+.header {
+  width: 100%;
+  min-height: 100vh;
+  background-image: linear-gradient(
+      to top,
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url(./../background.webp);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.content1 {
+  padding: 25px 4%;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.logo {
+  width: 45px;
+}
+
+nav ul li {
+  display: inline-block;
+  list-style: none;
+  margin: 10px 18px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+nav ul li a:hover {
+  color: #ff922b;
+}
+
+.header-text {
+  margin-top: 100px;
+  align-items: center;
+  text-align: center;
+}
+
+.header-text h1 {
+  text-align: center;
+  align-items: center;
+  color: white;
+  letter-spacing: 2px;
+}
+.header-text p {
+  text-align: center;
+  align-items: center;
+  color: white;
+  margin-top: 25px;
+}
+
+button {
+  color: black;
+  font-weight: bold;
+  background: white;
+  padding: 5px 10px;
+  margin-top: 25px;
+  border-radius: 20px;
+  border: 1px solid white;
+  cursor: pointer;
+  transition: scale 0.2 ease;
+  animation: mengubahwarnaborder 3s linear infinite;
+  box-shadow: 0 0 0 1px #868e96, 0 0 15px 0 #868e96;
+}
+
+@keyframes mengubahwarnaborder {
+  30% {
+    box-shadow: 0 0 0 2px #868e96, 0 0 20px 0 #868e96;
+  }
+  60% {
+    box-shadow: 0 0 0 2px #ff922b, 0 0 20px 0 #ff922b;
+  }
+  90% {
+    box-shadow: 0 0 0 2px #0b7285, 0 0 20px 0 #0b7285;
+  }
+}
+
+button:hover {
+  scale: 1.05;
+  color: black;
+  font-weight: bold;
+}
+
+button:active {
+  scale: 0.97;
+}
+
+nav .fa-regular {
+  display: none;
+}
+
+nav .fa-solid {
+  display: none;
+}
+
+@media (max-width: 600px) {
+  nav .fa-regular {
+    display: block;
+    font-size: 35px;
+  }
+
+  nav .fa-solid {
+    display: block;
+    font-size: 25px;
+  }
+
+  nav ul {
+    background: #264653;
+    position: fixed;
+    top: 0;
+    right: 0;
+    transform: translateX(100%);
+    width: 50%;
+    min-height: 100vh;
+    padding-top: 50px;
+    z-index: 1000;
+    transition: all 0.5s ease;
+    margin-top: 0;
+  }
+
+  nav ul li {
+    display: block;
+    margin: 25px;
+  }
+
+  nav ul .fa-regular {
+    position: absolute;
+    top: 25px;
+    /* left: 25px; */
+    cursor: pointer;
+    padding-left: 25px;
+  }
+}
+
+/*about us*/
+
+.about {
+  align-items: center;
+  margin: 0 auto;
+  width: 100%;
+  padding: 80px;
+  background: #212529;
+}
+
+.content2 {
+  margin-top: 120px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 100px 20%;
+}
+
+.content2 a {
+  text-decoration: none;
+}
+
+.content2 .card {
+  width: 300px;
+  height: 200px;
+  box-shadow: 0 0 30px 0 black;
+  position: relative;
+  background: #1b1c21;
+  transition: scale 0.3s ease;
+  cursor: pointer;
+  border-radius: 19px;
+}
+
+.content2 .card:hover {
+  scale: 1.05;
+}
+
+.content2 .card:active {
+  scale: 0.97;
+}
+
+.card .imgbox {
+  position: absolute;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  top: -60px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  z-index: 2;
+  border: 2px solid white;
+}
+
+.imgbox img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: #111111;
+  box-shadow: 0 0 0 1px white, 0 0 15px 0 white;
+  transition: scale 0.3s ease;
+  cursor: pointer;
+  object-fit: cover;
+  object-position: top;
+}
+
+.card .imgbox .rayhan {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: #111111;
+  box-shadow: 0 0 0 1px white, 0 0 15px 0 white;
+  transition: scale 0.3s ease;
+  cursor: pointer;
+  object-fit: cover;
+  object-position: center;
+}
+
+@keyframes mengubahwarnaborder {
+  30% {
+    box-shadow: 0 0 0 2px white, 0 0 30px 0 white;
+  }
+}
+
+.imgbox img:hover {
+  scale: 1.05;
+}
+
+.imgbox img:active {
+  scale: 0.97;
+}
+
+.card .uper {
+  width: 100%;
+  height: 120px;
+  background: var(--color);
+  border-radius: 19px;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  z-index: 1;
+}
+
+.uper .nama {
+  margin-bottom: 12px;
+  color: white;
+  font-size: 20px;
+}
+
+.card .lower {
+  height: 80px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+}
+
+.lower .post {
+  margin-top: 16px;
+  z-index: 999;
+  text-align: center;
+  color: white;
+}
+
+.teks h2 {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  color: white;
+  font-size: 25px;
+  margin-bottom: 20px;
+}
+
+/*Our projek*/
+
+.anak1 h4 {
+  padding: 90px;
+  text-align: center;
+  font-size: 25px;
+  color: white;
+  margin-bottom: 10px;
+}
+
+.anak1 p {
+  text-align: center;
+  color: white;
+  margin-top: -90px;
+}
+
+.anak {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  align-items: center;
+  padding: 20px;
+  margin-bottom: -5px;
+}
+
+.anak span {
+  padding: 10px 8px;
+}
+
+.active {
+  border-bottom: 5px solid orange;
+}
+
+.flex-contrainer,
+.flex-direction {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+}
+
+.flex-box1 {
+  width: 400px;
+  height: 70px;
+  background-image: url(rayhan1.png);
+  background-size: cover;
+  background-position: center;
+  font-size: 25px;
+  border-radius: 10px;
+  background-size: cover;
+  margin: 10px;
+  animation: ubahwarnaborder 3s infinite;
+}
+
+.flex-box2 {
+  width: 500px;
+  height: 295px;
+  background-image: url(rayhan6.png);
+  background-position: center;
+  background-size: cover;
+  font-size: 25px;
+  border-radius: 10px;
+  margin: 10px;
+  animation: ubahwarnaborder 3s infinite;
+}
+
+.flex-box3 {
+  width: 350px;
+  height: 400px;
+  background-image: url(rayhan2.png);
+  font-size: 25px;
+  background-position: center;
+  background-size: cover;
+  border-radius: 10px;
+  margin: 10px;
+  animation: ubahwarnaborder 3s infinite;
+}
+
+.flex-box4 {
+  width: 460px;
+  height: 385px;
+  background-image: url(rayhan4.png);
+  background-position: center;
+  font-size: 25px;
+  border-radius: 10px;
+  background-size: cover;
+  margin: 10px;
+  animation: ubahwarnaborder 3s infinite;
+}
+
+.flex-box5 {
+  width: 300px;
+  height: 370px;
+  background-image: url(rayhan5.png);
+  font-size: 25px;
+  border-radius: 10px;
+  background-size: cover;
+  background-position: center;
+  margin: 10px;
+  animation: ubahwarnaborder 3s infinite;
+}
+
+.flex-box6 {
+  width: 400px;
+  height: 500px;
+  background-image: url(rayhan3.png);
+  font-size: 25px;
+  border-radius: 10px;
+  background-size: cover;
+  background-position: center;
+  margin: 10px;
+  animation: ubahwarnaborder 3s infinite;
+}
+
+.flex-box7 {
+  width: 475px;
+  height: 590px;
+  background-image: url(syahdan6.png);
+  background-position: center;
+  background-size: cover;
+  font-size: 25px;
+  border-radius: 10px;
+  margin: 10px;
+  animation: ubahwarnaborder 3s infinite;
+}
+
+.flex-box8 {
+  width: 395px;
+  height: 550px;
+  background-image: url(syahdan2.png);
+  background-position: center;
+  background-size: cover;
+  font-size: 25px;
+  border-radius: 10px;
+  margin: 10px;
+  animation: ubahwarnaborder 3s infinite;
+}
+
+.flex-box9 {
+  width: 405px;
+  height: 550px;
+  background-image: url(syahdan3.png);
+  background-position: center;
+  background-size: cover;
+  font-size: 25px;
+  border-radius: 10px;
+  margin: 10px;
+  animation: ubahwarnaborder 3s infinite;
+}
+
+.flex-box10 {
+  width: 480px;
+  height: 345px;
+  background-image: url(syahdan4.png);
+  background-position: center;
+  background-size: cover;
+  font-size: 25px;
+  border-radius: 10px;
+  margin: 10px;
+  animation: ubahwarnaborder 3s infinite;
+}
+
+.flex-box11 {
+  width: 435px;
+  height: 345px;
+  background-image: url(syahdan5.png);
+  background-position: center;
+  background-size: cover;
+  font-size: 25px;
+  border-radius: 10px;
+  margin: 10px;
+  animation: ubahwarnaborder 3s infinite;
+}
+
+.flex-box12 {
+  width: 360px;
+  height: 345px;
+  background-image: url(syahdan1.png);
+  background-position: center;
+  background-size: cover;
+  font-size: 25px;
+  border-radius: 10px;
+  margin: 10px;
+  animation: ubahwarnaborder 3s infinite;
+}
+
+.flex-box13 {
+  width: 360px;
+  height: 400px;
+  background-image: url(pilda1.png);
+  background-position: center;
+  background-size: cover;
+  font-size: 25px;
+  border-radius: 10px;
+  margin: 10px;
+  animation: ubahwarnaborder 3s infinite;
+}
+
+.flex-box14 {
+  width: 370px;
+  height: 400px;
+  background-image: url(pilda2.png);
+  background-position: center;
+  background-size: cover;
+  font-size: 25px;
+  border-radius: 10px;
+  margin: 10px;
+  animation: ubahwarnaborder 3s infinite;
+}
+
+.flex-box15 {
+  width: 600px;
+  height: 405px;
+  background-image: url(pilda6.png);
+  background-position: center;
+  background-size: cover;
+  font-size: 25px;
+  border-radius: 10px;
+  margin: 10px;
+  animation: ubahwarnaborder 3s infinite;
+}
+
+.flex-box16 {
+  width: 185px;
+  height: 320px;
+  background-image: url(pilda3.png);
+  background-position: center;
+  background-size: cover;
+  font-size: 25px;
+  border-radius: 10px;
+  margin: 10px;
+  animation: ubahwarnaborder 3s infinite;
+}
+
+.flex-box17 {
+  width: 360px;
+  height: 345px;
+  background-image: url(pilda5.png);
+  background-position: center;
+  background-size: cover;
+  font-size: 25px;
+  border-radius: 10px;
+  margin: 10px;
+  animation: ubahwarnaborder 3s infinite;
+}
+
+.flex-box18 {
+  width: 320px;
+  height: 345px;
+  background-image: url(pilda4.png);
+  background-position: center;
+  background-size: cover;
+  font-size: 25px;
+  border-radius: 10px;
+  margin: 10px;
+  animation: ubahwarnaborder 3s infinite;
+}
+
+.flex-box19 {
+  width: 320px;
+  height: 345px;
+  background-image: url(fitri1.png);
+  background-position: center;
+  background-size: cover;
+  font-size: 25px;
+  border-radius: 10px;
+  margin: 10px;
+  animation: ubahwarnaborder 3s infinite;
+}
+
+.flex-box20 {
+  width: 320px;
+  height: 345px;
+  background-image: url(fitri2.png);
+  background-position: center;
+  background-size: cover;
+  font-size: 25px;
+  border-radius: 10px;
+  margin: 10px;
+  animation: ubahwarnaborder 3s infinite;
+}
+
+.flex-box21 {
+  width: 320px;
+  height: 345px;
+  background-image: url(fitri3.png);
+  background-position: center;
+  background-size: cover;
+  font-size: 25px;
+  border-radius: 10px;
+  margin: 10px;
+  animation: ubahwarnaborder 3s infinite;
+}
+
+.flex-box22 {
+  width: 320px;
+  height: 345px;
+  background-image: url(fitri4.png);
+  background-position: center;
+  background-size: cover;
+  font-size: 25px;
+  border-radius: 10px;
+  margin: 10px;
+  animation: ubahwarnaborder 3s infinite;
+}
+
+.flex-box23 {
+  width: 320px;
+  height: 345px;
+  background-image: url(fitri5.png);
+  background-position: center;
+  background-size: cover;
+  font-size: 25px;
+  border-radius: 10px;
+  margin: 10px;
+  animation: ubahwarnaborder 3s infinite;
+}
+
+.flex-box24 {
+  width: 320px;
+  height: 345px;
+  background-image: url(fitri6.png);
+  background-position: center;
+  background-size: cover;
+  font-size: 25px;
+  border-radius: 10px;
+  margin: 10px;
+  animation: ubahwarnaborder 3s infinite;
+}
+
+@keyframes ubahwarnaborder {
+  30% {
+    box-shadow: 0 0 0 1px white, 0 0 35px 0 white;
+  }
+
+  60% {
+    box-shadow: 0 0 0 1px white, 0 0 35px 0 white;
+  }
+}
+
+@media (max-width: 269px) {
+  .anak a {
+    padding: 5px;
+  }
+}
+
+.flex-direction div {
+  width: 350px;
+  height: 350px;
+  background-size: cover;
+  background-position: center;
+}
+
+.flex-contrainer div,
+.flex-direction div {
+  width: 350px;
+  height: 350px;
+  background-size: cover;
+  background-position: center;
+  transition: all 0.3s ease;
+}
+
+.flex-contrainer div:hover,
+.flex-direction div:hover {
+  background-size: 150%;
+}
+
+.projectSyahdan {
+  display: none;
+}
+
+.projectFilzdah {
+  display: none;
+}
+
+.projectFitri {
+  display: none;
+}
+
+.anak span {
+  font-size: 20px;
+  color: white;
+  cursor: pointer;
+}
+
+/*contact us*/
+
+.cucuw h4 {
+  text-align: center;
+  font-size: 30px;
+  color: white;
+  margin-bottom: 10px;
+  margin-top: 100px;
+}
+
+.contrainer {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.box {
+  transition: 1;
+  width: 280px;
+  height: 500px;
+  margin: 20px;
+  box-sizing: border-box;
+  font-size: 15px;
+  box-shadow: 0 0 0 1px;
+  color: white;
+  border-radius: 25px;
+  background-image: url(rayhan.jpg);
+  background-position: center;
+  background-size: cover;
+  animation: ubahwarnaborder 2s infinite;
+  cursor: pointer;
+}
+
+.box1 {
+  transition: 1;
+  width: 280px;
+  height: 500px;
+  margin: 20px;
+  box-sizing: border-box;
+  font-size: 15px;
+  box-shadow: 0 0 0 1px;
+  border-radius: 25px;
+  background-image: url(fitri.jpg);
+  background-position: center;
+  background-size: cover;
+  color: white;
+  animation: ubahwarnaborder 2s infinite;
+  cursor: pointer;
+}
+
+.box2 {
+  transition: 1;
+  width: 280px;
+  height: 500px;
+  margin: 20px;
+  box-sizing: border-box;
+  font-size: 15px;
+  box-shadow: 0 0 0 1px;
+  color: white;
+  border-radius: 25px;
+  background-image: url(syahdan.jpg);
+  background-position: center;
+  background-size: cover;
+  animation: ubahwarnaborder 2s infinite;
+  cursor: pointer;
+}
+
+.box3 {
+  transition: 1;
+  width: 280px;
+  height: 500px;
+  margin: 20px;
+  color: white;
+  box-sizing: border-box;
+  font-size: 15px;
+  box-shadow: 0 0 0 1px;
+  border-radius: 25px;
+  background-image: url(pilda.jpg);
+  background-position: center;
+  background-size: cover;
+  animation: ubahwarnaborder 2s infinite;
+  cursor: pointer;
+}
+
+.box:hover,
+.box1:hover,
+.box2:hover,
+.box3:hover {
+  transform: scale(1.04);
+  box-shadow: 2px 2px 2px white;
+  z-index: 2;
+}
+
+i {
+  font-size: 30px;
+  padding-left: 75px;
+}
+
+.box h2 {
+  text-align: center;
+  margin-top: 82%;
+  margin-bottom: 5px;
+}
+
+.box1 h2 {
+  text-align: center;
+  margin-top: 82%;
+  margin-bottom: 5px;
+}
+.box2 h2 {
+  text-align: center;
+  margin-top: 82%;
+  margin-bottom: 5px;
+}
+.box3 h2 {
+  text-align: center;
+  margin-top: 82%;
+  margin-bottom: 5px;
+}
+
+.box p {
+  text-align: center;
+  margin-top: 45%;
+  margin-bottom: 20px;
+  font-size: 17px;
+}
+
+.box1 p {
+  margin-top: 45%;
+  margin-bottom: 20px;
+  font-size: 17px;
+  text-align: center;
+}
+
+.box2 p {
+  text-align: center;
+  margin-top: 45%;
+  margin-bottom: 20px;
+  font-size: 17px;
+}
+
+.box3 p {
+  margin-top: 45%;
+  margin-bottom: 20px;
+  font-size: 17px;
+  text-align: center;
+}
+
+hr {
+  width: 50px;
+  margin-bottom: 100px;
+}
+
+.box hr {
+  width: 60px;
+  height: 4px;
+  color: white;
+  background-color: white;
+}
+
+.box1 hr {
+  width: 60px;
+  height: 4px;
+  color: white;
+  background-color: white;
+}
+
+.box2 hr {
+  width: 60px;
+  height: 4px;
+  color: white;
+  background-color: white;
+}
+
+.box3 hr {
+  width: 60px;
+  height: 4px;
+  color: white;
+  background-color: white;
+}

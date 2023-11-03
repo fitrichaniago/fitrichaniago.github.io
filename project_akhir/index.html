@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>contact & Project</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>  
+    <h4>CONTACT</h4>
+    <hr>
+	<div class="contrainer">
+		<div class="box">
+			<h3>RAYHAN</h3>
+			<hr>
+			<ul>multimedia</ul>
+			<a href="https://instagram.com/ahmad_ryan02?igshid=MzRlODBiNWFlZA==">
+				<i class="fa-brands fa-instagram" style="color: #ffffff;"></i>
+			</a>
+			<a href="mailto:ahmadryan0022@gmail.com">
+				<i class="fa-regular fa-envelope" style="color: #ffffff;"></i>
+			</a>
+		</div>
+		<div class="box1">
+			 <h2>FITRI</h2>
+			 <hr>
+			<p>teknik komputer jaringan</p>
+			 <a href="https://instagram.com/fftrnii_?igshid=MzRlODBiNWFlZA==">
+			 	<i class="fa-brands fa-instagram" style="color: #ffffff;"></i>
+			 </a>
+			<a href="mailto:fitrioktaviani1013@gmail.com">
+				<i class="fa-regular fa-envelope" style="color: #ffffff;"></i>
+			</a>
+		</div>
+		<div class="box2">
+			 <h3>SYAHDAN</h3>
+			 <hr> 
+			<ul>multimedia</ul>
+			<a href="https://instagram.com/syahdann22?igshid=MzRlODBiNWFlZA==">
+				<i class="fa-brands fa-instagram" style="color: #ffffff;"></i>
+			</a>
+			<a href="mailto:sasadan702@gmail.com">
+				<i class="fa-regular fa-envelope" style="color: #ffffff;"></i>
+			</a>
+		</div>
+		<div class="box3">
+		    <h3>FILZDAH</h3>
+		    <hr>
+			<p>teknik komputer jaringan</p>
+			<a href="https://instagram.com/dizah_affh?igshid=MzRlODBiNWFlZA==">
+				<i class="fa-brands fa-instagram" style="color: #ffffff;" target="_blank"></i>
+			</a>
+			<a href="mailto:dizah.affh@gmail.com">
+				<i class="fa-regular fa-envelope" style="color: #ffffff;"></i>
+			</a>
+		</div>
+	</div>
+
+
+
+
+ 	<div class="awal">
+ 		<div class="anak1">
+		<h4>OUR PROJECT</h4>
+	<p>project yang kami kerjakan sewaktu PKL</p>
+	</div>
+	<div class="anak">
+		<span class="tombolRayhan">Rayhan</span>
+		<span class="tombolSyahdan">Syahdan</span>
+		<span class="tombolFilzdah">Filzdah</span>
+		<span class="tombolFitri">Fitri</span>
+	</div>
+    <div class="projectRayhan">    	
+    <div class="flex-contrainer">
+    	<div class="flex-box1">
+        </div>
+    	<div class="flex-box2">
+        </div>
+    	<div class="flex-box3">
+    	</div>
+    </div>
+    <div class="flex-direction">
+    	<div class="flex-box4">
+    	</div>
+    	<div class="flex-box5">
+    	</div>
+    	<div class="flex-box6">
+    	</div>
+    </div>
+	</div>
+
+	<div class="projectSyahdan">    	
+    <div class="flex-contrainer">
+    	<div class="flex-box7">
+        </div>
+    	<div class="flex-box8">
+        </div>
+    	<div class="flex-box9">
+    	</div>
+    </div>
+    <div class="flex-direction">
+    	<div class="flex-box10">
+    	</div>
+    	<div class="flex-box11">
+    	</div>
+    	<div class="flex-box12">
+    	</div>
+    </div>
+	</div>
+
+	<div class="projectFilzdah">    	
+    <div class="flex-contrainer">
+    	<div class="flex-box13">
+        </div>
+    	<div class="flex-box14">
+        </div>
+    	<div class="flex-box15">
+    	</div>
+    </div>
+    <div class="flex-direction">
+    	<div class="flex-box16">
+    	</div>
+    	<div class="flex-box17">
+    	</div>
+    	<div class="flex-box18">
+    	</div>
+    </div>
+	</div>
+
+	<div class="projectFitri">    	
+    <div class="flex-contrainer">
+    	<div class="flex-box19">
+        </div>
+    	<div class="flex-box20">
+        </div>
+    	<div class="flex-box21">
+    	</div>
+    </div>
+    <div class="flex-direction">
+    	<div class="flex-box22">
+    	</div>
+    	<div class="flex-box23">
+    	</div>
+    	<div class="flex-box24">
+    	</div>
+    </div>
+	</div>
+	</div>
+	<script src="https://kit.fontawesome.com/0ba6cce1e3.js" crossorigin="anonymous"></script>
+	<script type="text/javascript">
+		const tombolRayhan = document.querySelector('.tombolRayhan');
+		const tombolSyahdan=document.querySelector('.tombolSyahdan');
+		const tombolFilzdah=document.querySelector('.tombolFilzdah');
+		const tombolFitri=document.querySelector('.tombolFitri');
+		const projectSyahdan=document.querySelector('.projectSyahdan');
+		const projectRayhan=document.querySelector('.projectRayhan');
+		const projectFilzdah=document.querySelector('.projectFilzdah');
+		const projectFitri=document.querySelector('.projectFitri');
+
+		tombolRayhan.addEventListener("click", function(e){
+			tombolRayhan.classList.add('active');
+			tombolSyahdan.classList.remove('active')
+			tombolFilzdah.classList.remove('active')
+			tombolFitri.classList.remove('active')
+			projectRayhan.style.display = "block";
+			projectSyahdan.style.display = "none";
+			projectFilzdah.style.display = "none";
+			projectFitri.style.display = "none";
+		})
+		tombolSyahdan.addEventListener("click",function(e){
+			tombolSyahdan.classList.add('active')
+			tombolRayhan.classList.remove('active')
+			tombolFilzdah.classList.remove('active')
+			tombolFitri.classList.remove('active')
+			projectRayhan.style.display="none";
+			projectSyahdan.style.display="block";
+			projectFilzdah.style.display = "none";
+			projectFitri.style.display="none";
+		})
+		tombolFilzdah.addEventListener("click",function(e){
+			tombolFilzdah.classList.add('active')
+			tombolFitri.classList.remove('active')
+			tombolRayhan.classList.remove('active')
+			tombolSyahdan.classList.remove('active')
+			projectRayhan.style.display="none";
+			projectSyahdan.style.display="none";
+			projectFilzdah.style.display="block";
+			projectFitri.style.display="none";
+		})
+		tombolFitri.addEventListener("click",function(e){
+			tombolRayhan.classList.remove('active')
+			tombolSyahdan.classList.remove('active')
+			tombolFilzdah.classList.remove('active')
+			tombolFitri.classList.add('active')
+			projectRayhan.style.display="none"
+			projectSyahdan.style.display="none"
+			projectFilzdah.style.display="none"
+			projectFitri.style.display="block"
+		})
+
+	</script>
+</body>
+</html>
